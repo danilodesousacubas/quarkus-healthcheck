@@ -10,4 +10,4 @@ http://localhost:8080/health/ready
 http://localhost:8080/health/live
 
 ### Used quarkus extensions 
-### mvn quarkus:add-extension -Dextensions="quarkus-resteasy-jackson
+### mvn quarkus:add-extension -Dextensions="quarkus-resteasy-jackson"
