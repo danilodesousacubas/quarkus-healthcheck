@@ -5,6 +5,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
 @Path("/first")
 public class FirstResource {
@@ -14,7 +15,7 @@ public class FirstResource {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public FirstData hello() {
-        return service.getFirstData();
+    public Response hello() {
+        return Response.ok(service.getFirstData()).build();
     }
 }
