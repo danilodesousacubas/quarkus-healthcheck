@@ -33,7 +33,26 @@ public class DataHealthCheck implements HealthCheck {
 
 [http://localhost:8080/health/live!](http://localhost:8080/health/live)
 
-
+```javascript
+{
+    status: "UP",
+    checks: [
+        {
+            name: "Basic Health Check",
+            status: "UP"
+        }, 
+        {
+            name: "Health check with Json Data",
+            status: "UP",
+            data: {
+                object2: "objectValue2",
+                object1: "objectValue1",
+                object3: "objectValue3"
+            }
+        }
+    ]
+}
+```
 
  #### use 
 
@@ -50,7 +69,7 @@ public class DataHealthCheck implements HealthCheck {
     .
     .
     .
-    
+
 ```
 #### or use quarkus add extension
 
