@@ -29,6 +29,16 @@ public class DataHealthCheck implements HealthCheck {
     }
 }
 
+@Liveness
+@ApplicationScoped
+public class BasicHealthCheck implements HealthCheck {
+
+    @Override
+    public HealthCheckResponse call() {
+        return HealthCheckResponse.up("Basic Health Check");
+    }
+}
+
 ```
 
 [http://localhost:8080/health/live!](http://localhost:8080/health/live)
