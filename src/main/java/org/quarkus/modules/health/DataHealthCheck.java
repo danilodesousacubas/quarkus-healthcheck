@@ -1,4 +1,4 @@
-package org.quarkus.modules;
+package org.quarkus.modules.health;
 
 import javax.enterprise.context.ApplicationScoped;
 import org.eclipse.microprofile.health.HealthCheck;

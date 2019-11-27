@@ -1,6 +1,6 @@
-package org.quarkus.modules;
+package org.quarkus.modules.model;
 
-public class FirstData {
+public class Fruit {
     private String name;
 
     public String getName(){
